@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática 1</title>
+
+</head>
+<style>
+    section {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: indigo;
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <h3>Exercício 1</h3>
+            <script>
+                let idadE = 27;
+
+                document.write('Minha idade é ' + idadE + ' anos.');
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 2</h3>
+            <script>
+                let x = 28;
+                let y = 30;
+                let z = x + y;
+
+                document.write('A soma de x + y é: ' + z);
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 3</h3>
+            <script>
+                let compraTotal = 149.90;
+                let quantidadeParcela = 3;
+                let valorParcela = compraTotal / quantidadeParcela;
+
+                document.write('O valor total da compra foi R$ ' + compraTotal.toFixed(2) + '<br>');
+                document.write('Forma de pagamento: ' + quantidadeParcela+ 'x' + ' de R$ ' + valorParcela.toFixed(2));
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 4</h3>
+            <script>
+                let minutos = 90;
+                let segundos = minutos * 60;
+
+                document.write(minutos + ' minutos é equivalente à ' + segundos + ' segundos!');
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 5</h3>
+            <script>
+                let aluno = 'Thainá';
+                let nota1 = 10;
+                let nota2 = 8;
+                let nota3 = 7;
+                let media = (nota1 + nota2 + nota3) / 3;
+
+                document.write('A aluna ' + aluno + ' ficou com a média: ' + media.toFixed(2) + '.');
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 6</h3>
+            <script>
+                let a = 10;
+                let b = 20;
+
+                a = a + b;
+                b = a - b;
+                a = a - b;
+
+                
+                document.write('A variavel A: ' + a + '<br>' + 'A variável B: ' + b);
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 7</h3>
+            <script>
+                let numEleitores = 5000;
+                let numVotosBrancos = 100;
+                let numVotosNulos = 50;
+                let numVotosValidos = 4850;
+                let municipio = 'Ivoti'
+                let percentual_votos_brancos = (numVotosBrancos / numEleitores) * 100;
+                let percentual_votos_nulos = (numVotosNulos / numEleitores) * 100;
+                let percentual_votos_validos = (numVotosValidos / numEleitores) * 100;
+
+                document.write('Eleitores: ' + numEleitores + '<br>' + 'Município: ' + municipio + '<br>' + 
+                'Votos Brancos: ' + percentual_votos_brancos + '%<br>' + 
+                'Votos Nulos: ' + percentual_votos_nulos + '%<br>' + 
+                'Votos Válidos: ' + percentual_votos_validos + '%<br>');
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 8</h3>
+            <script>
+                let num1 = 100;
+                let num2 = 75;
+
+                if (num1 === num2) {
+                    document.write('Números iguais.');
+                } else if (num1 > num2) {
+                    document.write('Primeiro é maior.');
+                } else if (num2 > num1) {
+                    document.write('Segundo maior.');
+                }
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 9</h3>
+            <script>
+                let macasComprada = 11;
+                let precoMacas;
+
+                if (macasComprada >= 12) {
+                    precoMacas = 0.25;
+                } else {
+                    precoMacas = 0.30;
+                }
+
+                let valorTotal = macasComprada * precoMacas; 
+
+                document.write('O número de maças compradas foi: ' + macasComprada + ', o valor da compra foi R$ ' + valorTotal.toFixed(2) + '.')
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 10 - no console</h3>
+            <script>
+                let nome = 'Jabel';
+                let idade = 30;
+                let anoAtual = 2024;
+                let anoNascimento = anoAtual - idade;
+                
+                console.log('Olá, meu nome é ' + nome + ', tenho ' + idade + ' anos, ' + 'nasci em ' + anoNascimento + '.');
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 11 - alert</h3>
+            <script>
+                let numInteiroPositivo = 6;
+
+                if (numInteiroPositivo % 2 === 0) {
+                    alert('Número é par!');
+                } else {
+                    alert('Numero é impar!');
+                }
+            </script>
+        </section>
+
+        <section>
+            <h3>Exercício 12 - no console</h3>
+            <script>
+                let ano_atual = 2024;
+                let ano_nascimento = 2006;
+                let idade_para_votar = ano_atual - ano_nascimento;
+
+                if (idade_para_votar >= 18) {
+                    console.log('Você já tem idade para votar e o voto é obrigatório!');
+                } else if (idade_para_votar >= 16){
+                    console.log('Você pode votar esse ano, mas o voto é facultativo');
+                } else {
+                    console.log('Você ainda não tem idade para votar!');
+                }
+            </script>
+        </section>
+    </main>
+</body>
+</html>
